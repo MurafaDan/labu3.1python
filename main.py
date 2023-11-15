@@ -6,7 +6,7 @@ class ClubCard:
         self.available_activities = available_activities
         self.validity_period = validity_period
 
-# cream obiectele 
+# cream obiectele
 card1 = ClubCard(1, 5000, "Basic", ["Gym", "Yoga"], 30)
 card2 = ClubCard(2, 8000, "Premium", ["Gym", "Yoga", "Innot"], 60)
 card3 = ClubCard(3, 3000, "Starter", ["Gym"], 15)
@@ -23,7 +23,7 @@ club_cards = {
 # afisarea informatiilor sdespre carduri
 for card_id, card in club_cards.items():
     print(f"Cardul #{card.card_id}")
-    print(f"Pret: {card.cost} руб.")
+    print(f"Pret: {card.cost} lei.")
     print(f"Tip: {card.card_type}")
     print(f"Activitati disponibile: {', '.join(card.available_activities)}")
     print(f"Termen de valabilitate: {card.validity_period} zile")
